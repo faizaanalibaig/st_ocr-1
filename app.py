@@ -9,7 +9,7 @@ pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
 st.set_option('deprecation.showfileUploaderEncoding', False) #to warning ignore 
 st.title("OCR - Optical Character Recognition")  #print title and text
 st.text("Upload the Image")
-uploaded_file = st.sidebar.file_uploader("Choose an image...",  type=["jpg","png","jpeg"]) #we can upload these types of files
+uploaded_file = st.sidebar.file_uploader("Choose an image...",  type=["jpg","png","jpeg"])  #we can upload these types of files
 if uploaded_file is not None: #only if file is uploaded it will show, else no error and nothing happens
 
         img = Image.open(uploaded_file)  #reads the image, similar to imread
